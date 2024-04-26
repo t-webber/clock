@@ -50,7 +50,7 @@ impl yew::prelude::Component for TitleBar {
 
     fn view(&self, ctx: &yew::prelude::Context<Self>) -> yew::prelude::Html {
         yew::prelude::html! {
-            <div data-tauri-drag-region="" id="title-bar">
+            <div id="title-bar" data-tauri-drag-region="" style="-webkit-app-region: drag">
                 <button onclick={ctx.link().callback(|_| Msg::Minimize)} class="tbar-other-btns"><yew_icons::Icon icon_id={yew_icons::IconId::FontAwesomeSolidWindowMinimize} style={self.icon_style.clone()} /></button>
                 <button onclick={ctx.link().callback(|_| Msg::Maximize)} class="tbar-other-btns">{self.maximin_icon()}</button>
                 <button onclick={ctx.link().callback(|_| Msg::Close)} id="close"><yew_icons::Icon icon_id={yew_icons::IconId::FontAwesomeSolidSkullCrossbones} style={self.icon_style.clone()} /></button>

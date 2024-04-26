@@ -1,7 +1,7 @@
 {
   "productName": "clock",
-  "version": "0.0.0",
-  "identifier": "com.tauri.dev",
+  "version": "0.1.0",
+  "identifier": "com.clock.dev",
 
   "build": {
     "beforeDevCommand": "trunk serve",
@@ -18,7 +18,9 @@
         "decorations": false,
         "alwaysOnTop": true,
         "width": 250,
-        "height": 150
+        "height": 150,
+        "resizable": true,
+        "center": true
       }
     ],
     "security": {

@@ -1,0 +1,3 @@
+{
+  "permissions": ["window:default", "window:allow-start-dragging"]
+}
